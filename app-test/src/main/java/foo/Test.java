@@ -14,8 +14,8 @@ public class Test {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		String s = "localhost";
-		String[] ss = s.split(":");
+		String s = "localhost.war";
+		String[] ss = s.split("\\.");
 		System.out.println(ss[0]);
 		System.out.println(ss[1]);
 	}

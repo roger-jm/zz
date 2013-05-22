@@ -48,6 +48,11 @@
 			<artifactId>httpclient</artifactId>
 			<version>4.2.3</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.ant</groupId>
+			<artifactId>ant</artifactId>
+			<version>1.9.0</version>
+		</dependency>
 
 		<!-- to test with TomEE and Arquillian <dependency> <groupId>org.apache.openejb</groupId> 
 			<artifactId>arquillian-tomee-remote</artifactId> <version>1.5.1</version> 
