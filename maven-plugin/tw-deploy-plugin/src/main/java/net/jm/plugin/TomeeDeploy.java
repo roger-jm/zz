@@ -72,15 +72,14 @@ public class TomeeDeploy extends AbstractMojo {
 
 		// delete app from webapps
 		if(isDelApp){
-			try {
-				Thread.sleep(wait);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-			
 			File webApp = new File(tongweb, "/" + webapps);
 			File oldapp = new File(webApp, "/" + appName_noWar);
 			if (oldapp.exists()) {
+				try {
+					Thread.sleep(wait);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
 				Project app_proj = new Project();
 				Delete app_del = new Delete();
 				app_del.setProject(app_proj);
