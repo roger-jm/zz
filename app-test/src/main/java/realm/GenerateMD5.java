@@ -14,5 +14,7 @@ public class GenerateMD5 {
 		System.out.println("no.3: " + ralph3);
 		System.out.println("md5: " + ralph4);
 		System.out.println("no.5: " + ralph5);
+		String ralph6 = RealmBase.Digest("twns:twns-realm:twns", "SHA", "GBK");
+		System.out.println("twns: " + ralph6);
 	}
 }
