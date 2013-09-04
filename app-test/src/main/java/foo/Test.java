@@ -18,6 +18,9 @@ public class Test {
 		String[] ss = s.split("\\.");
 		System.out.println(ss[0]);
 		System.out.println(ss[1]);
+		String app = "app_server";
+		app = app.substring(4);
+		System.out.println(app);
 	}
 
 }
